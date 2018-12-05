@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3417D3FD21801C0E00EEECA2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3417D3FC21801C0D00EEECA2 /* GoogleService-Info.plist */; };
+		342F40DB21B786E800F3F3F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 342F40DA21B786E700F3F3F5 /* LaunchScreen.storyboard */; };
 		6321A9C31B94EBA10053D2E7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6321A9C21B94EBA10053D2E7 /* Images.xcassets */; };
 		6321A9E21B94EBE70053D2E7 /* CustomMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6321A9DB1B94EBE70053D2E7 /* CustomMessageCell.swift */; };
 		6321A9E51B94EBE70053D2E7 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6321A9DE1B94EBE70053D2E7 /* MessageCell.xib */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		3417D3FC21801C0D00EEECA2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		342F40DA21B786E700F3F3F5 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
 		48E4717765C5CF3BB2856A86 /* Pods_WhatsApp_Nano.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhatsApp_Nano.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6321A9B61B94EBA10053D2E7 /* WhatsApp Nano.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WhatsApp Nano.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6321A9BA1B94EBA10053D2E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 		6321A9EB1B94EC170053D2E7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				342F40DA21B786E700F3F3F5 /* LaunchScreen.storyboard */,
 				63E28B281B9A336600FBF6E0 /* Main.storyboard */,
 				6321A9E91B94EBEE0053D2E7 /* Custom Cell */,
 			);
@@ -213,6 +216,7 @@
 				63E28B291B9A336600FBF6E0 /* Main.storyboard in Resources */,
 				6321A9C31B94EBA10053D2E7 /* Images.xcassets in Resources */,
 				3417D3FD21801C0E00EEECA2 /* GoogleService-Info.plist in Resources */,
+				342F40DB21B786E800F3F3F5 /* LaunchScreen.storyboard in Resources */,
 				6321A9E51B94EBE70053D2E7 /* MessageCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
