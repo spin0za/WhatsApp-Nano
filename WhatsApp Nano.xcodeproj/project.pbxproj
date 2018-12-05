@@ -18,7 +18,6 @@
 		63E28B311B9A337600FBF6E0 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E28B2C1B9A337600FBF6E0 /* LogInViewController.swift */; };
 		63E28B321B9A337600FBF6E0 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E28B2D1B9A337600FBF6E0 /* RegisterViewController.swift */; };
 		63E28B331B9A337600FBF6E0 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E28B2E1B9A337600FBF6E0 /* WelcomeViewController.swift */; };
-		63EBB3051D98004B004175E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63EBB3041D98004B004175E5 /* LaunchScreen.storyboard */; };
 		6D475E21F2C2BD62240309BA /* Pods_WhatsApp_Nano.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48E4717765C5CF3BB2856A86 /* Pods_WhatsApp_Nano.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,7 +36,6 @@
 		63E28B2C1B9A337600FBF6E0 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		63E28B2D1B9A337600FBF6E0 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		63E28B2E1B9A337600FBF6E0 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
-		63EBB3041D98004B004175E5 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ../LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7EF62BBAEB6CE32A7FC20B02 /* Pods-WhatsApp Nano.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatsApp Nano.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhatsApp Nano/Pods-WhatsApp Nano.release.xcconfig"; sourceTree = "<group>"; };
 		B89E3A629171386A9BC26DD3 /* Pods-WhatsApp Nano.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatsApp Nano.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhatsApp Nano/Pods-WhatsApp Nano.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -125,7 +123,6 @@
 		6321A9EB1B94EC170053D2E7 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				63EBB3041D98004B004175E5 /* LaunchScreen.storyboard */,
 				63E28B281B9A336600FBF6E0 /* Main.storyboard */,
 				6321A9E91B94EBEE0053D2E7 /* Custom Cell */,
 			);
@@ -216,7 +213,6 @@
 				63E28B291B9A336600FBF6E0 /* Main.storyboard in Resources */,
 				6321A9C31B94EBA10053D2E7 /* Images.xcassets in Resources */,
 				3417D3FD21801C0E00EEECA2 /* GoogleService-Info.plist in Resources */,
-				63EBB3051D98004B004175E5 /* LaunchScreen.storyboard in Resources */,
 				6321A9E51B94EBE70053D2E7 /* MessageCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
