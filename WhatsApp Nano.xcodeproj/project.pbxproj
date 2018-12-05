@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3417D3FD21801C0E00EEECA2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3417D3FC21801C0D00EEECA2 /* GoogleService-Info.plist */; };
 		6321A9C31B94EBA10053D2E7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6321A9C21B94EBA10053D2E7 /* Images.xcassets */; };
 		6321A9E21B94EBE70053D2E7 /* CustomMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6321A9DB1B94EBE70053D2E7 /* CustomMessageCell.swift */; };
 		6321A9E51B94EBE70053D2E7 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6321A9DE1B94EBE70053D2E7 /* MessageCell.xib */; };
@@ -18,10 +19,13 @@
 		63E28B321B9A337600FBF6E0 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E28B2D1B9A337600FBF6E0 /* RegisterViewController.swift */; };
 		63E28B331B9A337600FBF6E0 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E28B2E1B9A337600FBF6E0 /* WelcomeViewController.swift */; };
 		63EBB3051D98004B004175E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63EBB3041D98004B004175E5 /* LaunchScreen.storyboard */; };
+		6D475E21F2C2BD62240309BA /* Pods_WhatsApp_Nano.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48E4717765C5CF3BB2856A86 /* Pods_WhatsApp_Nano.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6321A9B61B94EBA10053D2E7 /* Flash Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flash Chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3417D3FC21801C0D00EEECA2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		48E4717765C5CF3BB2856A86 /* Pods_WhatsApp_Nano.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhatsApp_Nano.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6321A9B61B94EBA10053D2E7 /* WhatsApp Nano.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WhatsApp Nano.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6321A9BA1B94EBA10053D2E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6321A9C21B94EBA10053D2E7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6321A9DB1B94EBE70053D2E7 /* CustomMessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomMessageCell.swift; sourceTree = "<group>"; };
@@ -34,6 +38,8 @@
 		63E28B2D1B9A337600FBF6E0 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		63E28B2E1B9A337600FBF6E0 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		63EBB3041D98004B004175E5 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ../LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7EF62BBAEB6CE32A7FC20B02 /* Pods-WhatsApp Nano.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatsApp Nano.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhatsApp Nano/Pods-WhatsApp Nano.release.xcconfig"; sourceTree = "<group>"; };
+		B89E3A629171386A9BC26DD3 /* Pods-WhatsApp Nano.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatsApp Nano.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhatsApp Nano/Pods-WhatsApp Nano.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,29 +47,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D475E21F2C2BD62240309BA /* Pods_WhatsApp_Nano.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3786579CB476B6A37B2AA00B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				48E4717765C5CF3BB2856A86 /* Pods_WhatsApp_Nano.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6321A9AD1B94EBA10053D2E7 = {
 			isa = PBXGroup;
 			children = (
-				6321A9B81B94EBA10053D2E7 /* Flash Chat */,
+				6321A9B81B94EBA10053D2E7 /* WhatsApp Nano */,
 				6321A9B71B94EBA10053D2E7 /* Products */,
+				805DAA783F9D540549917841 /* Pods */,
+				3786579CB476B6A37B2AA00B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		6321A9B71B94EBA10053D2E7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6321A9B61B94EBA10053D2E7 /* Flash Chat.app */,
+				6321A9B61B94EBA10053D2E7 /* WhatsApp Nano.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6321A9B81B94EBA10053D2E7 /* Flash Chat */ = {
+		6321A9B81B94EBA10053D2E7 /* WhatsApp Nano */ = {
 			isa = PBXGroup;
 			children = (
 				6321A9EE1B94EC360053D2E7 /* Model */,
@@ -72,13 +89,14 @@
 				6321A9C21B94EBA10053D2E7 /* Images.xcassets */,
 				6321A9B91B94EBA10053D2E7 /* Supporting Files */,
 			);
-			path = "Flash Chat";
+			path = "WhatsApp Nano";
 			sourceTree = "<group>";
 		};
 		6321A9B91B94EBA10053D2E7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
 				6321A9BA1B94EBA10053D2E7 /* Info.plist */,
+				3417D3FC21801C0D00EEECA2 /* GoogleService-Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -122,24 +140,35 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		805DAA783F9D540549917841 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B89E3A629171386A9BC26DD3 /* Pods-WhatsApp Nano.debug.xcconfig */,
+				7EF62BBAEB6CE32A7FC20B02 /* Pods-WhatsApp Nano.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6321A9B51B94EBA10053D2E7 /* Flash Chat */ = {
+		6321A9B51B94EBA10053D2E7 /* WhatsApp Nano */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6321A9D51B94EBA10053D2E7 /* Build configuration list for PBXNativeTarget "Flash Chat" */;
+			buildConfigurationList = 6321A9D51B94EBA10053D2E7 /* Build configuration list for PBXNativeTarget "WhatsApp Nano" */;
 			buildPhases = (
+				C01F847F7657F050EF773B13 /* [CP] Check Pods Manifest.lock */,
 				6321A9B21B94EBA10053D2E7 /* Sources */,
 				6321A9B31B94EBA10053D2E7 /* Frameworks */,
 				6321A9B41B94EBA10053D2E7 /* Resources */,
+				B72F386370E4A05358937208 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Flash Chat";
+			name = "WhatsApp Nano";
 			productName = "Flash Chat";
-			productReference = 6321A9B61B94EBA10053D2E7 /* Flash Chat.app */;
+			productReference = 6321A9B61B94EBA10053D2E7 /* WhatsApp Nano.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -150,17 +179,18 @@
 			attributes = {
 				LastSwiftMigration = 0700;
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0900;
-				ORGANIZATIONNAME = "London App Brewery";
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "";
 				TargetAttributes = {
 					6321A9B51B94EBA10053D2E7 = {
 						CreatedOnToolsVersion = 6.4;
-						LastSwiftMigration = 0900;
+						DevelopmentTeam = 8BU5G59M34;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 6321A9B11B94EBA10053D2E7 /* Build configuration list for PBXProject "Flash Chat" */;
+			buildConfigurationList = 6321A9B11B94EBA10053D2E7 /* Build configuration list for PBXProject "WhatsApp Nano" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -173,7 +203,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6321A9B51B94EBA10053D2E7 /* Flash Chat */,
+				6321A9B51B94EBA10053D2E7 /* WhatsApp Nano */,
 			);
 		};
 /* End PBXProject section */
@@ -185,12 +215,62 @@
 			files = (
 				63E28B291B9A336600FBF6E0 /* Main.storyboard in Resources */,
 				6321A9C31B94EBA10053D2E7 /* Images.xcassets in Resources */,
+				3417D3FD21801C0E00EEECA2 /* GoogleService-Info.plist in Resources */,
 				63EBB3051D98004B004175E5 /* LaunchScreen.storyboard in Resources */,
 				6321A9E51B94EBE70053D2E7 /* MessageCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B72F386370E4A05358937208 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WhatsApp Nano/Pods-WhatsApp Nano-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WhatsApp Nano/Pods-WhatsApp Nano-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C01F847F7657F050EF773B13 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WhatsApp Nano-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6321A9B21B94EBA10053D2E7 /* Sources */ = {
@@ -222,12 +302,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -255,7 +337,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -275,12 +357,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -301,7 +385,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -311,50 +395,50 @@
 		};
 		6321A9D61B94EBA10053D2E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B89E3A629171386A9BC26DD3 /* Pods-WhatsApp Nano.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 8BU5G59M34;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				INFOPLIST_FILE = "Flash Chat/Info.plist";
+				INFOPLIST_FILE = "WhatsApp Nano/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.YourName.Flash-Chat";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.hyr.whatsapp-nano";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
 		6321A9D71B94EBA10053D2E7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EF62BBAEB6CE32A7FC20B02 /* Pods-WhatsApp Nano.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 8BU5G59M34;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				INFOPLIST_FILE = "Flash Chat/Info.plist";
+				INFOPLIST_FILE = "WhatsApp Nano/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.YourName.Flash-Chat";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.hyr.whatsapp-nano";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6321A9B11B94EBA10053D2E7 /* Build configuration list for PBXProject "Flash Chat" */ = {
+		6321A9B11B94EBA10053D2E7 /* Build configuration list for PBXProject "WhatsApp Nano" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6321A9D31B94EBA10053D2E7 /* Debug */,
@@ -363,7 +447,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6321A9D51B94EBA10053D2E7 /* Build configuration list for PBXNativeTarget "Flash Chat" */ = {
+		6321A9D51B94EBA10053D2E7 /* Build configuration list for PBXNativeTarget "WhatsApp Nano" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6321A9D61B94EBA10053D2E7 /* Debug */,
