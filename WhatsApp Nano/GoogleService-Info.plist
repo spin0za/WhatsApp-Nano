@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>1098539572339-p8huqkdq51jhter7tc55e92l6ap7mgpv.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1098539572339-p8huqkdq51jhter7tc55e92l6ap7mgpv</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDcAfHj1wN7dWt06Marcq-772f6bBKydM0</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1098539572339</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>me.hyr.whatsapp-nano</string>
+	<key>PROJECT_ID</key>
+	<string>whatsapp-nano</string>
+	<key>STORAGE_BUCKET</key>
+	<string>whatsapp-nano.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1098539572339:ios:09dce0c1e4ad4a0a</string>
+	<key>DATABASE_URL</key>
+	<string>https://whatsapp-nano.firebaseio.com</string>
+</dict>
+</plist>
