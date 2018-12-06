@@ -49,8 +49,6 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
         return 3
     }
     
-    
-    //TODO: Declare tableViewTapped here:
     @objc func tableViewTapped() {
         messageTextfield.endEditing(true)
     }
@@ -86,11 +84,23 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     
     @IBAction func sendPressed(_ sender: AnyObject) {
+        sendButton.isEnabled = false
         
+        let msgDB = Database.database().reference().child("Messages")
+        let msgInfo = [
+            "Sender": Auth.auth().currentUser?.email,
+            "MessageBody": messageTextfield.text!
+        ]
         
-        //TODO: Send the message to Firebase and save it in our database
-        
-        
+        msgDB.childByAutoId().setValue(msgInfo) { (err, ref) in
+            if err != nil {
+                print(err!)
+            } else {
+                print("Message sent!")
+                self.sendButton.isEnabled = true
+                self.messageTextfield.text = ""
+            }
+        }
     }
     
     //TODO: Create the retrieveMessages method here:
@@ -112,6 +122,4 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
         }
     }
     
-
-
 }
