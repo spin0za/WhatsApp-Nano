@@ -9,7 +9,7 @@ import Firebase
 class ChatViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate {
     
     // Declare instance variables here
-
+    var messages = [Message]()
     
     // We've pre-linked the IBOutlets
     @IBOutlet var heightConstraint: NSLayoutConstraint!
@@ -33,6 +33,7 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
         messageTableView.register(UINib(nibName: "MessageCell", bundle: nil), forCellReuseIdentifier: "customMessageCell")
         
         configureTableView()
+        retrieveMessages()
     }
 
     ///////////////////////////////////////////
@@ -41,12 +42,15 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "customMessageCell", for: indexPath) as! CustomMessageCell
-        cell.messageBody.text = "lorem ipsum"
+        let msg = messages[indexPath.row]
+        cell.messageBody.text = msg.messageBody
+        cell.senderUsername.text = msg.sender
+        cell.avatarImageView.image = UIImage(named: "egg")
         return cell
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return messages.count
     }
     
     @objc func tableViewTapped() {
@@ -64,23 +68,16 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
     //MARK:- TextField Delegate Methods
     
     
-
-    
     //TODO: Declare textFieldDidBeginEditing here:
-    
     
     
     //TODO: Declare textFieldDidEndEditing here:
     
-
     
     ///////////////////////////////////////////
     
     
     //MARK: - Send & Recieve from Firebase
-    
-    
-    
     
     
     @IBAction func sendPressed(_ sender: AnyObject) {
@@ -105,7 +102,15 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     //TODO: Create the retrieveMessages method here:
     
-    
+    func retrieveMessages() {
+        let msgDB = Database.database().reference().child("Messages")
+        msgDB.observe(.childAdded) { (snapshot) in
+            let value = snapshot.value as! Dictionary<String, String>
+            self.messages.append(Message(sender: value["Sender"]!, messageBody: value["MessageBody"]!))
+            self.configureTableView()
+            self.messageTableView.reloadData()
+        }
+    }
 
     
     
