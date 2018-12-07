@@ -5,6 +5,7 @@
 
 import UIKit
 import Firebase
+import ChameleonFramework
 
 class ChatViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate {
     
@@ -31,6 +32,7 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
         messageTableView.addGestureRecognizer(tapGesture)
 
         messageTableView.register(UINib(nibName: "MessageCell", bundle: nil), forCellReuseIdentifier: "customMessageCell")
+        messageTableView.separatorStyle = .none
         
         configureTableView()
         retrieveMessages()
@@ -46,6 +48,11 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
         cell.messageBody.text = msg.messageBody
         cell.senderUsername.text = msg.sender
         cell.avatarImageView.image = UIImage(named: "egg")
+        
+        let isSenderSelf = msg.sender == Auth.auth().currentUser?.email
+        cell.avatarImageView.backgroundColor = isSenderSelf ? UIColor.flatMint() : UIColor.flatSkyBlue()
+        cell.messageBackground.backgroundColor = isSenderSelf ? UIColor.flatGreen() : UIColor.flatBlue()
+        
         return cell
     }
     
@@ -60,6 +67,11 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
     func configureTableView() {
         messageTableView.rowHeight = UITableView.automaticDimension
         messageTableView.estimatedRowHeight = 120
+    }
+    
+    func scrollToBottom() {
+        let indexPath = IndexPath(row: messages.count - 1, section: 0)
+        messageTableView.scrollToRow(at: indexPath, at: .bottom, animated: true)
     }
     
     
@@ -96,11 +108,10 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
                 print("Message sent!")
                 self.sendButton.isEnabled = true
                 self.messageTextfield.text = ""
+                self.scrollToBottom()
             }
         }
     }
-    
-    //TODO: Create the retrieveMessages method here:
     
     func retrieveMessages() {
         let msgDB = Database.database().reference().child("Messages")
@@ -109,6 +120,7 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
             self.messages.append(Message(sender: value["Sender"]!, messageBody: value["MessageBody"]!))
             self.configureTableView()
             self.messageTableView.reloadData()
+            self.scrollToBottom()
         }
     }
 
